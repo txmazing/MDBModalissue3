@@ -1,0 +1,84 @@
+// Theme colors
+$primary: #286b39;
+$secondary: #181dac;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"white": white,
+);
+
+$custom-colors: (
+	"secondary-bright": #181dac,
+	"secondary-brighter": #181dac,
+	"glass": hsla(0, 0%, 100%, 0.15),
+);
+// scss-docs-end theme-colors-map
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Body
+//
+// Settings for the `<body>` element.
+// $body-color: #ffffff;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-raleway: "Raleway", sans-serif;
+$font-family-base: var(--mdb-font-raleway);
+
+$position-values: (
+	0: 0,
+	5px: 5px,
+	10px: 10px,
+	25px: 25px,
+	40: 40%,
+	45: 45%,
+	50: 50%,
+	75: 75%,
+	85: 85%,
+	100: 100%,
+);
+
+$utilities: (
+	"opacity": (
+		property: opacity,
+		values: (
+			0: 0,
+			25: 0.25,
+			50: 0.5,
+			100: 1,
+		),
+	),
+	"height": (
+		property: height,
+		class: h,
+		values: (
+			15: 15%,
+			25: 25%,
+			50: 50%,
+			75: 75%,
+			85: 85%,
+			100: 100%,
+			auto: auto,
+		),
+	),
+);
+
+.bg-blur {
+	backdrop-filter: blur(30px);
+}
+
+.datatable-inner {
+	background-color: transparent !important;
+}
+
+.pe-pointer {
+	cursor: pointer;
+}
+
+.text-unselectable {
+	user-select: none;
+}

@@ -1,0 +1,17 @@
+@import "./mdb.pro.scss";
+
+body {
+	background-color: #286b39;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #286b39;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #181dac;
+}
